@@ -1,0 +1,112 @@
+/* 按钮初始配置 */
+.btn-clear {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+/*默认表单验证码样式*/
+.btn-verify {
+    @extend .btn-clear;
+    width: 260px;
+    height: 40px;
+    color: #2165D7;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    border-radius: 2px;
+    background: #E3ECFD;
+    cursor: pointer;
+}
+.btn-verify:disabled {
+    background-color: #E3ECFD;
+    cursor: not-allowed;
+    color: #999999;
+}
+/* 确认中号按钮 */
+.btn-primary {
+    @extend .btn-clear;
+    width: 260px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    border-radius: 2px;
+    background: blue;
+    cursor: pointer;
+}
+.btn-primary:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    @extend .btn-primary;
+    color: #333;
+    background-color: #ddd;
+}
+
+.btn-outline-primary {
+    @extend .btn-primary;
+    box-sizing: border-box;
+    color: blue;
+    border: 1px solid blue;
+    background-color: #fff;
+}
+
+.btn-disabled {
+    @extend .btn-primary;
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+/* 尺寸 */
+.btn-lg {
+    width: 380px;
+}
+
+.btn-md {
+    width: 260px;
+}
+
+.btn-sm {
+    width: 160px;
+}
+
+.btn-xs {
+    width: 120px;
+}
+
+
+/* 特殊 */
+.btn-ghost {
+    @extend .btn-primary;
+    box-sizing: border-box;
+    width: 76px;
+    height: 28px;
+    color: #999;
+    font-size: 14px;
+    border: 1px solid#999  ;
+    background-color: #fff;
+}
+
+.btn-ghost:hover {
+    color: #fff;
+    background-color: blue;
+    border-color: blue;
+}
+
+.btn-ghost-active {
+    @extend .btn-primary;
+    box-sizing: border-box;
+    width: 76px;
+    height: 28px;
+    font-size: 14px;
+    color: blue;
+    border: 1px solid blue;
+    background-color: #fff;
+}
+
